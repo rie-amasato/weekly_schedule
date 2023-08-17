@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>gant</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">gant</a>
+    </div>
+  </nav>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+	<p><button onclick="addTask()">+タスクを追加する</button></p>
+	
+	<p><button onclick="seekweek(-7)">◀︎</button>
+	<button onclick="seekweek(7)">▶︎</button></p>
+
+	<div class="gant">
+		<table id="shedule-table">
+			<tr class="sct-head">
+				<th class="sct-check" id="checkcomp"></th>
+				
+				<th class="sct-task" id="taskname">タスク名</th>
+				
+				<th class="sct-seldate" id="date_start">開始日</th>
+				<th class="sct-seldate" id="date_start">終了日</th>
+
+				<th class="sct-date" id="date_Mon"></th>
+				<th class="sct-date" id="date_Tue"></th>
+				<th class="sct-date" id="date_Wed"></th>
+				<th class="sct-date" id="date_Thu"></th>
+				<th class="sct-date" id="date_Fri"></th>
+				<th class="sct-date" id="date_Sat"></th>
+				<th class="sct-date" id="date_Sun"></th>
+			</tr>
+		</table>
+	</div>
+
+
+</body>
+
+<link rel="https://cdn.jsdelivr.net/npm/lightpick@1.6.2/lightpick.min.css" type="text/css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightpick@1.6.2/lightpick.min.js"></script>
+
+
+<link rel="stylesheet.css" type="text/css">
+<script src="script.js"></script>
+</html>
